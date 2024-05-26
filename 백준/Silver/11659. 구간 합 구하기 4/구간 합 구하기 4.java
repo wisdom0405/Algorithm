@@ -1,8 +1,8 @@
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.io.IOException;
+import java.io.BufferedWriter;
 import java.util.StringTokenizer;
 
 public class Main {
@@ -22,7 +22,7 @@ public class Main {
             S[i] = S[i - 1] + Integer.parseInt(stringTokenizer.nextToken());
         }
 
-        // 질의 처리
+        // 구해야 하는 횟수 quizNo 만큼 for문 반복
         for (int q = 0; q < quizNo; q++) {
             stringTokenizer = new StringTokenizer(bufferedReader.readLine());
             int i = Integer.parseInt(stringTokenizer.nextToken()); // 구간 시작
